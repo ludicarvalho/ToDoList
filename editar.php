@@ -48,8 +48,8 @@ else {
 				}
 			}
 			.card-header {
-				background-image: linear-gradient(to right, #000080,#FF0000);
-				color: #00FF00;
+				background-image: linear-gradient(to right, #DCDCDC,#A9A9A9);
+				color: #454545;
 				font-weight: bold;
 			}
 		</style>

@@ -11,7 +11,7 @@ Desenvolvimento de um simples projeto CRUD (ToDo List) utilizando o acesso a ban
 
 ## Configuração do Projeto:
 
-- Executar a query pessoa.sql ou importar o arquivo no phpMyAdmin para criar a table necessária.
+- Executar a query todolist.sql ou importar o arquivo no phpMyAdmin para criar a table necessária.
 - Editar o arquivo **banco.php** 
 
 ```

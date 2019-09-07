@@ -31,7 +31,7 @@ function Contar() {
 	var resul = document.getElementById("res");
 
 	if (campo.value != "")
-		resul.innerHTML = '<strong>' + (249 - campo.value.length) + '</strong> caracteres restantes.';
+		resul.innerHTML = '<strong>' + (250 - campo.value.length) + '</strong> caracteres restantes.';
 	else
 		resul.innerHTML = 'Até <strong>250</strong> caracteres.';
 }
@@ -45,11 +45,11 @@ function Apagar(id) {
 		return;
 }
 function Editar(id) {
-	AbrirPopUp("editar.php?id=" + id, 770,260);
+	AbrirPopUp("editar.php?id=" + id, 460,370);
 }
 function AbrirPopUp(pagina,largura,altura) {
 	if (largura != null) {
-		window.open(pagina, "", "width="+largura+",height="+altura+",scrollbars=no,top=125,left=350,resizable=no");
+		window.open(pagina, "", "width=" + largura + ",height=" + altura + ",scrollbars=no,top=125,left=350,resizable=no");
 	}
 	else {
 		window.open(pagina, "", "scrollbars=no,resizable=no,top=100,left=250,width=1100,height=600");
@@ -76,14 +76,14 @@ function Cartao(id, descricao, data, hora) {
 
 	spTxt.classList.add("float-left");
 
-	var spBtn = 'Anotação: <span id="contador">' + id + '</span>' +
+	var titulo = 'Anotação: <span id="contador">' + id + '</span>' +
 				'<span class="float-right btn btn-sm btn-danger" title="Excluir" onclick="Apagar(' + id + ')">' +
 				'<strong>X</strong>' +
 				'</span>' +
 				'<span class="float-right btn btn-sm btn-warning" title="Aletrar" onclick="Editar(' + id + ')">'+
 				'<strong>O</strong>' +
 				'</span>';
-	cardHeader.innerHTML += spBtn;
+	cardHeader.innerHTML = titulo;
 	card.appendChild(cardHeader);
 	/*          */
 
@@ -91,15 +91,14 @@ function Cartao(id, descricao, data, hora) {
 	var txtCorpo = '<div class="text-card">' + descricao + '</div>';
 	cardBody.innerHTML = txtCorpo;
 	card.appendChild(cardBody);
+	/*        */
 
 	/* Rodapé */
-
-	var txtRodape = '<small class="text-muted"><strong>Data: </strong> ' + data + '</small>' +
+	var txtRodape = '<small class="text-muted"><strong>Data: </strong>' + data + '</small>' +
 					'<br />' +
 					'<small class="text-muted"><strong>Hora: </strong>' + hora + '</small>';
 	cardFooter.innerHTML = txtRodape;
 	card.appendChild(cardFooter);
-
 	/*        */
 
 	var local = document.getElementById("corpo");

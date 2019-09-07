@@ -38,21 +38,9 @@ else {
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/pixel-perfect-at-16px-volume-3-1/16/5091-512.png" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="estilo.css" />
 		<title>Editar: <?php echo $td->GetID(); ?></title>
-		<style>
-			@media screen and (max-width: 769px) {
-				.btn {
-					width: 100%;
-					margin-top: 15px;
-				}
-			}
-			.card-header {
-				background-image: linear-gradient(to right, #DCDCDC,#A9A9A9);
-				color: #454545;
-				font-weight: bold;
-			}
-		</style>
 	</head>
 	<body>
 

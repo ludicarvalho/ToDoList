@@ -1,0 +1,32 @@
+.form-group {
+    margin-top: 15px;
+}
+.card {
+    margin: 4px;
+    width: 30%;
+    height: 350px;
+    float: left;
+}
+.card-text {
+    vertical-align: middle;
+}
+.card-header {
+    /*
+    background-image: linear-gradient(to right, #000080,#FF0000);
+    color: #00FF00;
+    */
+    background-image: linear-gradient(to right, #DCDCDC,#A9A9A9);
+    color: #454545;
+    font-weight: bold;
+}
+@media screen and (max-width: 769px) {
+    .form-group .btn {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        margin: 0;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+}
